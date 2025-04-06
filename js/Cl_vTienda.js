@@ -13,6 +13,8 @@ export default class Cl_vTienda {
         this.vista = document.getElementById(`mainForm`);
         this.btFoto = document.getElementById(`mainForm_btFoto`);
         this.btVideo = document.getElementById(`mainForm_btVideo`);
+        this.btVolverFoto = document.getElementById(`fotosForm_btVolver`);
+        this.btVolverVideo = document.getElementById(`videoForm_btVolver`);
         this.tablaFotos = document.getElementById(`mainForm_tablaFotografia`);
         this.tablaVideo = document.getElementById(`mainForm_tablaVideo`);
         this.reqMontoVideo = document.getElementById(`mainForm_reqMontoVideo`);
@@ -30,6 +32,14 @@ export default class Cl_vTienda {
             this.ocultarVistaTienda();
             this.vFoto.ocultarVistaFoto();
             this.vVideo.mostrarVistaVideo();
+        };
+        this.btVolverFoto.onclick = () => {
+            this.vFoto.ocultarVistaFoto();
+            this.mostrarVistaTienda();
+        };
+        this.btVolverVideo.onclick = () => {
+            this.vVideo.ocultarVistaVideo();
+            this.mostrarVistaTienda();
         };
         this.vFoto.btConfirmar.onclick = () => this.controlador.procesarFoto();
         this.vVideo.btConfirmar.onclick = () => this.controlador.procesarVideo();
