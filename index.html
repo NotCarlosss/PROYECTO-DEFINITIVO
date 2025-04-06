@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RECORDANDO</title>
+    <link rel="stylesheet" href="styles.css">       
+ </head>
+ <body>
+    <section id="mainForm">
+        <h3>Seleccione el tipo de servicio</h3>
+        <button id="mainForm_btFoto">Foto</button> 
+        <button id="mainForm_btVideo">Video</button>
+        <h3>Informacion de las fotografias</h3>
+        <table id="mainForm_tablaFotografia">
+            <tr>
+                <th>Codigo</th>
+                <th>Costo</th>
+                <th>Tipo</th>
+                <th>Descuento</th>
+                <th>Incremento</th>
+                <th>Precio</th>
+            </tr>
+        </table>
+        <p>Monto vendido de fotos: <span id="mainForm_reqMontoFoto">?</span>$</p>
+        <h3>Informacion de los videos</h3>
+        <table id="mainForm_tablaVideo">
+            <tr>
+                <th>Codigo</th>
+                <th>Costo</th>
+                <th>Formato HD</th>
+                <th>Incremento</th>
+                <th>Precio</th>
+            </tr>
+        </table>
+        <p>Monto vendido de videos: <span id="mainForm_reqMontoVideo">?</span>$</p>
+        <h4>Total vendido: <span id="mainForm_reqTotalVendido">?</span>$</h4>
+        <h4>Número de fotos digitales: <span id="mainForm_reqNumeroFotosDigitales">?</span></h4>
+        <h4>SubTotal de fotos digitales: <span id="mainForm_reqSubTotalFotosDigitales">?</span>$</h4>
+        <h4>Promedio de ventas digitales: <span id="mainForm_reqPromedioVentasDigitales">?</span>$</h4>
+    </section>
+
+    <section id="fotosForm">
+        <h3>Datos de la fotografia</h3>
+        <input type="text" id="fotosForm_inCodigo" placeholder="Codigo">
+        <input type="text" id="fotosForm_inCosto" placeholder="Costo">
+        <input type="text" id="fotosForm_inTipo" placeholder="Tipo">
+        <br><button id="fotosForm_btConfirmar">Confirmar Datos</button>
+    </section>
+    <section id="videoForm">
+        <h3>Datos del video</h3>
+        <input type="text" id="videoForm_inCodigo" placeholder="Codigo">
+        <input type="text" id="videoForm_inCosto" placeholder="Costo">
+        <input type="text" id="videoForm_inFormatoHD" placeholder="Formato HD">
+        <br><button id="videoForm_btConfirmar">Confirmar Datos</button>
+    </section>
+ </body>
+ <script type="module">
+    import Cl_principal from "./js/Cl_principal.js";
+    new Cl_principal();
+</script>
+</html>
