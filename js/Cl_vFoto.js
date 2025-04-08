@@ -1,22 +1,22 @@
 export default class Cl_vFoto {
     constructor() {
         this.vista = document.getElementById(`fotosForm`);
-        this.Codigo = document.getElementById(`fotosForm_inCodigo`);
-        this.Costo = document.getElementById(`fotosForm_inCosto`);
-        this.TipoFoto = document.getElementById(`fotosForm_inTipo`);
+        this.inCodigo = document.getElementById(`fotosForm_inCodigo`);
+        this.inCosto = document.getElementById(`fotosForm_inCosto`);
+        this.inTipoFoto = document.getElementById(`fotosForm_inTipo`);
         this.btConfirmar = document.getElementById(`fotosForm_btConfirmar`);
     }
 
     get codigo() {
-        return this.Codigo.value;
+        return this.inCodigo.value;
     }
 
     get costo() {
-        return +this.Costo.value;
+        return +this.inCosto.value;
     }
 
     get tipoFoto() {
-        return this.TipoFoto.value;
+        return this.inTipoFoto.value;
     }
 
     montrarVistaFoto() {

@@ -11,6 +11,12 @@ export default class Cl_mVideo extends Cl_servicio {
     get formatoHD() {
         return this._formatoHD;
     }
+    set costo(costo) {
+        this._costo = +costo;
+    }
+    get costo() {
+        return this._costo;
+    }
     incremento() {
         if (this.formatoHD === "SI") {
             return this.costo * 0.20;

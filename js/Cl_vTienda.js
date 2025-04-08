@@ -15,7 +15,7 @@ export default class Cl_vTienda {
         this.btVideo = document.getElementById(`mainForm_btVideo`);
         this.btVolverFoto = document.getElementById(`fotosForm_btVolver`);
         this.btVolverVideo = document.getElementById(`videoForm_btVolver`);
-        this.tablaFotos = document.getElementById(`mainForm_tablaFotografia`);
+        this.tablaFoto = document.getElementById(`mainForm_tablaFotografia`);
         this.tablaVideo = document.getElementById(`mainForm_tablaVideo`);
         this.reqMontoVideo = document.getElementById(`mainForm_reqMontoVideo`);
         this.reqMontoFoto = document.getElementById(`mainForm_reqMontoFoto`);
@@ -77,7 +77,7 @@ export default class Cl_vTienda {
 
         reportarFoto(totalVendido, numeroFotosDigitales, subTotalFotosDigitales,
              pomedioVentasDigitales, montoFoto, montoVideo) {
-            this.tablaFotos.innerHTML += `
+            this.tablaFoto.innerHTML += `
             <tr>
                 <td>${this.mFoto.codigo}</td>
                 <td>${this.mFoto.costo}</td>

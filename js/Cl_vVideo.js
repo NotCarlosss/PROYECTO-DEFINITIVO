@@ -1,28 +1,28 @@
 export default class Cl_vVideo {
     constructor() {
-        this.Vista = document.getElementById(`videoForm`);
-        this.Codigo = document.getElementById(`videoForm_inCodigo`)
-        this.Costo = document.getElementById(`videoForm_inCosto`)
-        this.FormatoHD = document.getElementById(`videoForm_inFormatoHD`)
+        this.vista = document.getElementById(`videoForm`);
+        this.inCodigo = document.getElementById(`videoForm_inCodigo`)
+        this.inCosto = document.getElementById(`videoForm_inCosto`)
+        this.inFormatoHD = document.getElementById(`videoForm_inFormatoHD`)
         this.btConfirmar = document.getElementById(`videoForm_btConfirmar`)
     }
 
     get codigo(){
-        return +this.Codigo.value;
+        return +this.inCodigo.value;
     }
 
     get costo(){
-        return +this.Costo.value;
+        return +this.inCosto.value;
     }
 
     get formatoHD(){
-        return this.FormatoHD.value;
+        return this.inFormatoHD.value;
     }
     ocultarVistaVideo(){
-        this.Vista.hidden = true;
+        this.vista.hidden = true;
     }
     mostrarVistaVideo(){
-        this.Vista.hidden = false;
+        this.vista.hidden = false;
     }
     
 }
